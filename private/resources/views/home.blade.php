@@ -7,6 +7,8 @@
             <h3 class="box-title">Links</h3>
             <div class="box-tools pull-right">
                 <!-- Buttons, labels, and many other things can be placed here! -->
+                <button><a href="{{ url('/submit') }}"><i class="fa fa-btn fa-submit"></i>Submit</a></button>
+
                 <!-- Here is a label for example -->
                 <span class="label label-primary">Links</span>
             </div><!-- /.box-tools -->
