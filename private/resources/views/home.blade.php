@@ -12,20 +12,32 @@
             </div><!-- /.box-tools -->
         </div><!-- /.box-header -->
         <div class="box-body">
-            @foreach ($links as $link)
-                <h4> Title</h4>
-                <p>{{ $link->title }}</p>
-                <h4> Url</h4>
-                <p>{{ $link->url}}</p>
-                <h4> Description</h4>
-                <p>{{ $link->description}}</p>
-                <hr>
-            @endforeach
+
+            <table id="example">
+                <colgroup>
+                    <col width="130">
+                    <col width="30%">
+                    <col width="40%">
+                </colgroup>
+                <tr>
+                    <th>Title</th>
+                    <th>Url</th>
+                    <th>Description</th>
+                </tr>
+                @foreach ($links as $link)
+                    <tr>
+                    <td>{{ $link->title }}</td>
+                    <td>{{ $link->url}}</td>
+                    <td>{{ $link->description}}</td>
+                    </tr>
+                @endforeach
+            </table>
+
         </div><!-- /.box-body -->
         <div class="box-footer">
-            The footer of the box
         </div><!-- box-footer -->
     </div><!-- /.box -->
+
 
 
 @stop
